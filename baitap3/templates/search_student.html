@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Search Student</title>
+</head>
+<body>
+    <h1>Search Student</h1>
+    <form method="post">
+        <label>Student Name:</label>
+        <input type="text" name="name" required>
+        <button type="submit">Search</button>
+    </form>
+    {% if students %}
+        <ul>
+            {% for student in students %}
+                <li>ID: {{ student[0] }}, Name: {{ student[1] }}, Email: {{ student[2] }}, Age: {{ student[3] }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

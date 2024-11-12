@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Main Menu</h1>
+    <ul>
+        <li><a href="{{ url_for('add_student') }}">Add Student</a></li>
+        <li><a href="{{ url_for('search_student') }}">Search Student</a></li>
+        <li><a href="{{ url_for('remove_student') }}">Remove Student</a></li>
+    </ul>
+</body>
+</html>

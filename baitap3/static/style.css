@@ -1,0 +1,124 @@
+/* Thiết lập cơ bản cho body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F4F8;      /* Màu nền xám nhạt, dễ chịu cho mắt */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container chính, được căn giữa và tối đa hóa chiều rộng */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);  /* Bóng mờ nhẹ */
+}
+
+/* Tiêu đề */
+h1 {
+    color: #3D6E87;  /* Màu xanh nhẹ, tạo cảm giác tươi mới */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Định dạng cho nhãn */
+label {
+    font-size: 15px;
+    margin-bottom: 8px;
+    display: block;
+    color: #4A4A4A;  /* Màu chữ xám đậm */
+}
+
+/* Ô nhập liệu */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #C8D3DF;  /* Màu viền xám nhạt */
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #F8FAFC;  /* Màu nền sáng dịu */
+}
+
+/* Nút bấm */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5C99D6;  /* Xanh nhẹ */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4A89C6;  /* Xanh đậm hơn khi hover */
+}
+
+/* Tin nhắn Flash */
+.flash-messages {
+    color: #D9534F;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.flash-messages li {
+    background-color: #FDECEA;  /* Màu nền hồng nhạt */
+    border: 1px solid #F5C6CB;  /* Viền đỏ nhạt */
+    color: #A94442;             /* Chữ đỏ nhạt */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Định dạng cho liên kết nút bấm */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #5B7EA6;   /* Màu xanh nhạt */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #4A6E8C;   /* Đậm hơn khi hover */
+}
+
+/* Container nút */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* Container dành cho nút đăng xuất */
+.logout-container {
+    text-align: center;
+}
+
+.logout-button {
+    background-color: #E07A5F;   /* Cam nhẹ */
+    padding: 10px 15px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #CF6652;   /* Đậm hơn khi hover */
+}
